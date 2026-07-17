@@ -6,7 +6,6 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:gap/gap.dart';
-import 'package:lottie/lottie.dart';
 import 'package:portfolio/constants/constants.dart';
 import 'package:portfolio/data/links.dart';
 import 'package:portfolio/navigation/navigation.dart';
