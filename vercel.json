@@ -1,0 +1,21 @@
+{
+  "routes": [
+    {
+      "src": "/api/mail",
+      "methods": ["POST", "OPTIONS"],
+      "dest": "/api/routes/mailer.js"
+    },
+    {
+      "src": "/api",
+      "methods": ["GET", "OPTIONS"],
+      "dest": "/api/routes/default.js"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}

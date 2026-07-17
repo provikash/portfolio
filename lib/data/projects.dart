@@ -1,0 +1,658 @@
+// import 'package:flutter/painting.dart';
+// import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+// import 'package:portfolio/data/skills.dart';
+// import 'package:portfolio/model/project.dart';
+
+// class Projects {
+//   Projects._();
+
+//   static final dashability = Project(
+//     name: 'Dashability',
+//     imageUrl:
+//         'https://raw.githubusercontent.com/yashas-hm/dashability/refs/heads/main/assets/dashability_avatar.png',
+//     description:
+//         'Runtime Observability Layer for Flutter Apps. Connects to running Flutter apps via VM Service, monitors performance and errors in real-time, detects anomalies, and exposes observation and action tools via MCP.',
+//     tag: ProjectTag.package,
+//     skills: [Skills.flutter, Skills.llms],
+//     links: [
+//       (
+//         url: 'https://github.com/yashas-hm/dashability',
+//         urlText: 'Code',
+//         icon: FontAwesomeIcons.code,
+//       ),
+//       (
+//         url: 'https://pub.dev/packages/dashability',
+//         urlText: 'Pub.dev',
+//         icon: FontAwesomeIcons.cube,
+//       ),
+//     ],
+//     endDate: DateTime(2026, 4),
+//     imageFit: BoxFit.contain,
+//   );
+
+//   static final mediaMetadataPlus = Project(
+//     name: 'Media Metadata Plus',
+//     imageUrl:
+//         'https://raw.githubusercontent.com/yashas-hm/media-metadata-plus/refs/heads/main/image_asset.png',
+//     description:
+//         'Cross-platform Flutter plugin for reading media metadata; EXIF, GPS, camera info, and video duration from images, RAW files, and videos using pure Rust via flutter_rust_bridge.',
+//     tag: ProjectTag.package,
+//     skills: [Skills.flutter, Skills.rust],
+//     links: [
+//       (
+//         url: 'https://github.com/yashas-hm/media-metadata-plus',
+//         urlText: 'Code',
+//         icon: FontAwesomeIcons.code,
+//       ),
+//       (
+//         url: 'https://pub.dev/packages/media_metadata_plus',
+//         urlText: 'Pub.dev',
+//         icon: FontAwesomeIcons.cube,
+//       ),
+//     ],
+//     endDate: DateTime(2026, 5),
+//     imageFit: BoxFit.contain,
+//   );
+
+//   static final angioNet = Project(
+//     name: 'AngioNET',
+//     imageUrl: 'https://yashashm.sirv.com/portfolio/angionet.png',
+//     description:
+//         'One-click, reproducible U‑Net pipeline for retinal vessel segmentation, achieving Dice ~0.86, accuracy ~98%, sensitivity ~91%, and specificity ~99% on clinical angiographic images.',
+//     tag: ProjectTag.aiMl,
+//     skills: [Skills.git, Skills.python],
+//     links: [
+//       (
+//         url: 'https://github.com/yashas-hm/AngioNet',
+//         urlText: 'Code',
+//         icon: FontAwesomeIcons.code,
+//       ),
+//     ],
+//     endDate: DateTime(2025, 11),
+//   );
+
+//   static final askYashas = Project(
+//     name: 'AskYashas',
+//     imageUrl: 'https://yashashm.sirv.com/portfolio/askyashas.png',
+//     description:
+//         'A serverless RAG chatbot using FastAPI, LangChain, and vector search to deliver intelligent, context‑aware answers from custom data.',
+//     tag: ProjectTag.aiMl,
+//     skills: [
+//       Skills.python,
+//       Skills.langchain,
+//       Skills.llms,
+//       Skills.githubActions,
+//     ],
+//     links: [
+//       (
+//         url: 'https://github.com/yashas-hm/AskYashas',
+//         urlText: 'Code',
+//         icon: FontAwesomeIcons.code,
+//       ),
+//       (
+//         url: 'https://yashashm.dev/chat',
+//         urlText: 'Demo',
+//         icon: FontAwesomeIcons.upRightFromSquare,
+//       ),
+//     ],
+//     endDate: DateTime(2025, 4),
+//   );
+
+//   static final glowBottomAppBar = Project(
+//     name: 'Glow Bottom App Bar',
+//     imageUrl: 'https://yashashm.sirv.com/portfolio/glowAppBar.gif',
+//     description:
+//         'A customizable Flutter bottom navigation bar with a smooth glowing transition effect and customizable appearance for modern UI navigation.',
+//     tag: ProjectTag.package,
+//     skills: [Skills.flutter],
+//     links: [
+//       (
+//         url: 'https://github.com/yashas-hm/glow_bottom_app_bar',
+//         urlText: 'Code',
+//         icon: FontAwesomeIcons.code,
+//       ),
+//       (
+//         url: 'https://pub.dev/packages/glow_bottom_app_bar',
+//         urlText: 'Pub.dev',
+//         icon: FontAwesomeIcons.cube,
+//       ),
+//     ],
+//     endDate: DateTime(2024, 11),
+//   );
+
+//   static final countryCallingCodeKit = Project(
+//     name: 'Country Calling Code Kit',
+//     imageUrl: 'https://yashashm.sirv.com/portfolio/countrycallkit.png',
+//     description:
+//         'A sleek, cross‑platform Flutter package for picking country flags, names, and international dialing codes with a customizable UI and smart default detection.',
+//     tag: ProjectTag.package,
+//     skills: [Skills.flutter],
+//     links: [
+//       (
+//         url: 'https://github.com/yashas-hm/country-calling-code-kit',
+//         urlText: 'Code',
+//         icon: FontAwesomeIcons.code,
+//       ),
+//       (
+//         url: 'https://pub.dev/packages/country_calling_code_kit',
+//         urlText: 'Pub.dev',
+//         icon: FontAwesomeIcons.cube,
+//       ),
+//     ],
+//     endDate: DateTime(2025, 6),
+//   );
+
+//   static final dayNightSwitcher = Project(
+//     name: 'Day Night Switcher',
+//     imageUrl: 'https://yashashm.sirv.com/portfolio/dayNightSwitcher.gif',
+//     description:
+//         'A responsive Flutter theme switcher widget with fluid day/night animations, adaptive color syncing, and easy integration across apps.',
+//     tag: ProjectTag.package,
+//     skills: [Skills.flutter],
+//     links: [
+//       (
+//         url: 'https://github.com/yashas-hm/day-night-themed-switcher',
+//         urlText: 'Code',
+//         icon: FontAwesomeIcons.code,
+//       ),
+//       (
+//         url: 'https://pub.dev/packages/day_night_themed_switcher',
+//         urlText: 'Pub.dev',
+//         icon: FontAwesomeIcons.cube,
+//       ),
+//     ],
+//     endDate: DateTime(2025, 5),
+//   );
+
+//   static final lavaLampEffect = Project(
+//     name: 'Lava Lamp Effect',
+//     imageUrl: 'https://yashashm.sirv.com/portfolio/lava_lamp_effect.gif',
+//     description:
+//         'A visually engaging Flutter animation package delivering fluid, customizable lava‑lamp motion effects for modern UIs.',
+//     tag: ProjectTag.package,
+//     skills: [Skills.flutter],
+//     links: [
+//       (
+//         url: 'https://github.com/yashas-hm/lava-lamp-effect',
+//         urlText: 'Code',
+//         icon: FontAwesomeIcons.code,
+//       ),
+//       (
+//         url: 'https://pub.dev/packages/lava_lamp_effect',
+//         urlText: 'Pub.dev',
+//         icon: FontAwesomeIcons.cube,
+//       ),
+//     ],
+//     endDate: DateTime(2025, 5),
+//   );
+
+//   static final directMessage = Project(
+//     name: 'Direct Message',
+//     imageUrl: 'https://yashashm.sirv.com/portfolio/directMessage.png',
+//     description:
+//         'A Flutter utility app that cuts out contact saving and enables one‑tap WhatsApp messaging, boosting messaging efficiency with a sleek minimalist design.',
+//     tag: ProjectTag.production,
+//     skills: [Skills.flutter],
+//     links: [
+//       (
+//         url: 'https://github.com/yashas-hm/direct-message',
+//         urlText: 'Code',
+//         icon: FontAwesomeIcons.code,
+//       ),
+//       (
+//         url: 'https://directmessage.yashashm.dev',
+//         urlText: 'Demo',
+//         icon: FontAwesomeIcons.upRightFromSquare,
+//       ),
+//     ],
+//     endDate: DateTime(2024, 3),
+//   );
+
+//   static final henchman = Project(
+//     name: 'Henchman',
+//     imageUrl: 'https://yashashm.sirv.com/portfolio/henchman.png',
+//     description:
+//         'CLI developer tool automating project scaffolding, Git tasks, and environment management to boost productivity.',
+//     tag: ProjectTag.production,
+//     skills: [Skills.javascript, Skills.bash],
+//     links: [
+//       (
+//         url: 'https://github.com/yashas-hm/henchman',
+//         urlText: 'Code',
+//         icon: FontAwesomeIcons.code,
+//       ),
+//       (
+//         url: 'https://www.npmjs.com/package/henchman-cli',
+//         urlText: 'NPM',
+//         icon: FontAwesomeIcons.cube,
+//       ),
+//     ],
+//     endDate: DateTime(2024, 8),
+//   );
+
+//   static final echoFrame = Project(
+//     name: 'Echo Frame',
+//     imageUrl: 'https://yashashm.sirv.com/portfolio/echoframe.png',
+//     description:
+//         'Offline photo organizer with editing capabilities, improving personal media management efficiency by 70%.',
+//     tag: ProjectTag.inProgress,
+//     skills: [Skills.flutter, Skills.tensorflow, Skills.opencv],
+//     links: [
+//       (
+//         url: 'https://github.com/yashas-hm/echo-frame',
+//         urlText: 'Code',
+//         icon: FontAwesomeIcons.code
+//       ),
+//     ],
+//     endDate: null,
+//   );
+
+//   static final arduinoMidiDrums = Project(
+//     name: 'Arduino MIDI Drums',
+//     imageUrl: 'https://yashashm.sirv.com/portfolio/drums.png',
+//     description:
+//         'Electronic drum kit with Arduino and MIDI, achieving sub-10ms response latency for real-time performance.',
+//     tag: ProjectTag.project,
+//     skills: [Skills.arduino, Skills.cpp],
+//     links: [
+//       (
+//         url: 'https://github.com/yashas-hm/Arduino-MIDI-Drums',
+//         urlText: 'Code',
+//         icon: FontAwesomeIcons.code
+//       ),
+//     ],
+//     endDate: DateTime(2018, 6),
+//   );
+
+//   static final pratvi = Project(
+//     name: 'PRATVI',
+//     imageUrl: 'https://yashashm.sirv.com/portfolio/pratvi.png',
+//     description:
+//         'A Flutter app for wedding logistics management, streamlining planning and guest coordination for 100+ users.',
+//     tag: ProjectTag.production,
+//     skills: [Skills.flutter, Skills.firebase, Skills.gcp],
+//     links: [
+//       (
+//         url: 'https://github.com/yashas-hm/PRATVI',
+//         urlText: 'Code',
+//         icon: FontAwesomeIcons.code,
+//       ),
+//     ],
+//     endDate: DateTime(2024, 1),
+//   );
+
+//   static final aslGestureSensing = Project(
+//     name: 'ASL Gesture Sensing',
+//     imageUrl: 'https://yashashm.sirv.com/portfolio/asl.gif',
+//     description:
+//         'ML model to translate ASL hand gestures to text with 90% accuracy using real-time video feed.',
+//     tag: ProjectTag.aiMl,
+//     skills: [Skills.python, Skills.mediapipe, Skills.opencv],
+//     links: [
+//       (
+//         url: 'https://github.com/yashas-hm/ASL-Gesture-Sensing',
+//         urlText: 'Code',
+//         icon: FontAwesomeIcons.code,
+//       ),
+//     ],
+//     endDate: DateTime(2023, 8),
+//   );
+
+//   static final smartGlass = Project(
+//     name: 'Smart Glass',
+//     imageUrl: 'https://yashashm.sirv.com/portfolio/smartglass.jpg',
+//     description:
+//         'Affordable smart glass device with IoT capabilities, supporting remote notifications for accessibility.',
+//     tag: ProjectTag.project,
+//     skills: [Skills.cpp, Skills.arduino, Skills.ar],
+//     links: [
+//       (
+//         url: 'https://github.com/yashas-hm/Smart-Glass',
+//         urlText: 'Code',
+//         icon: FontAwesomeIcons.code
+//       ),
+//     ],
+//     endDate: DateTime(2022, 3),
+//   );
+
+//   static final illnessLab = Project(
+//     name: 'Illness Lab',
+//     imageUrl: 'https://yashashm.sirv.com/portfolio/illnessLab.png',
+//     description:
+//         'A virtual escape room for medical residents, improving diagnostic reasoning and engagement through scenario-driven challenges.',
+//     tag: ProjectTag.production,
+//     skills: [Skills.flutter],
+//     links: [
+//       (
+//         url: 'https://yashas-hm-unc.github.io/illness-lab-website/',
+//         urlText: 'Demo',
+//         icon: FontAwesomeIcons.upRightFromSquare,
+//       ),
+//     ],
+//     endDate: DateTime(2025, 2),
+//   );
+
+//   static final medTourismCo = Project(
+//     name: 'MedTourism Co.',
+//     imageUrl: 'https://yashashm.sirv.com/portfolio/mtc.png',
+//     description:
+//         'A full-stack medical tourism platform with clinic discovery, community forums, health tracking, and live chat to improve user engagement and decision-making.',
+//     tag: ProjectTag.production,
+//     skills: [
+//       Skills.flutter,
+//       Skills.typescript,
+//       Skills.python,
+//       Skills.docker,
+//       Skills.mysql,
+//       Skills.nodeJs,
+//       Skills.expressJs,
+//     ],
+//     links: [
+//       (
+//         url:
+//             'https://github.com/yashas-hm/just-documentation/blob/main/MedTourismCo/MedTourismCo.md',
+//         urlText: 'Documentation',
+//         icon: FontAwesomeIcons.fileLines,
+//       ),
+//     ],
+//     endDate: DateTime(2024, 6),
+//   );
+
+//   static final dentaVacation = Project(
+//     name: 'DentaVacation',
+//     imageUrl: 'https://yashashm.sirv.com/portfolio/dentavacation.png',
+//     description:
+//         'A Flutter dental-care app, increasing engagement by 40%, retention by 30%, and customer satisfaction by 20% via quizzes, habit tracking, and real-time chat.',
+//     tag: ProjectTag.production,
+//     skills: [
+//       Skills.flutter,
+//       Skills.gcp,
+//       Skills.typescript,
+//       Skills.docker,
+//       Skills.mysql,
+//       Skills.nodeJs,
+//       Skills.expressJs,
+//     ],
+//     links: [
+//       (
+//         url:
+//             'https://github.com/yashas-hm/just-documentation/blob/main/DentaVacation/DentaVacation.md',
+//         urlText: 'Documentation',
+//         icon: FontAwesomeIcons.fileLines,
+//       ),
+//       (
+//         url: 'https://www.app.dentavacation.com',
+//         urlText: 'Demo',
+//         icon: FontAwesomeIcons.upRightFromSquare,
+//       )
+//     ],
+//     endDate: DateTime(2023, 12),
+//   );
+
+//   static final spotter = Project(
+//     name: 'Geospatial Social Platform',
+//     imageUrl: 'https://yashashm.sirv.com/portfolio/spotter.png',
+//     description:
+//         'A location-based discovery app using Flutter and Firebase, boosting engagement by 40%, reducing storage usage by 50%, and improving data retrieval speed by 25%.',
+//     tag: ProjectTag.production,
+//     skills: [
+//       Skills.flutter,
+//       Skills.firebase,
+//       Skills.gcp,
+//       Skills.python,
+//     ],
+//     links: [
+//       (
+//         url: 'https://github.com/spotter-find-your-spot/spotter',
+//         urlText: 'Documentation',
+//         icon: FontAwesomeIcons.fileLines,
+//       ),
+//     ],
+//     endDate: DateTime(2022, 12),
+//   );
+
+//   /// All projects (unsorted)
+//   static final List<Project> _all = [
+//     dashability,
+//     mediaMetadataPlus,
+//     echoFrame,
+//     countryCallingCodeKit,
+//     dayNightSwitcher,
+//     lavaLampEffect,
+//     angioNet,
+//     illnessLab,
+//     askYashas,
+//     glowBottomAppBar,
+//     henchman,
+//     medTourismCo,
+//     pratvi,
+//     directMessage,
+//     dentaVacation,
+//     aslGestureSensing,
+//     spotter,
+//     smartGlass,
+//     arduinoMidiDrums,
+//   ];
+
+//   static List<Project> get all => sorted(_all);
+
+//   /// Sorts projects:
+//   /// 1. Groups by tag (all packages together, all AI/ML together, etc.)
+//   /// 2. Within each tag group, sorts by endDate (newest first, null for in-progress)
+//   /// 3. Tag groups ordered by tag.order (In Progress → AI/ML → Production → Project → Package)
+//   static List<Project> sorted(List<Project> projects) {
+//     final list = List<Project>.from(projects);
+//     list.sort((a, b) {
+//       if (a.endDate == null && b.endDate == null) return 0;
+//       if (a.endDate == null) return -1;
+//       if (b.endDate == null) return 1;
+//       return b.endDate!.compareTo(a.endDate!);
+//     });
+//     return list;
+//   }
+
+//   static List<Project> byTag(ProjectTag tag) {
+//     List<Project> list = _all;
+
+//     if (tag.order != -1) {
+//       list = _all.where((p) => p.tag == tag).toList();
+//     }
+
+//     return sorted(list);
+//   }
+
+//   static final List<Project> highlights = [
+//     askYashas,
+//     illnessLab,
+//     medTourismCo,
+//     henchman,
+//   ];
+// }
+
+
+import 'package:flutter/painting.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portfolio/data/skills.dart';
+import 'package:portfolio/model/project.dart';
+
+class Projects {
+  Projects._();
+
+  static final prepMateAi = Project(
+    name: 'PrepMateAi',
+    imageUrl: 'TODO_REPLACE_WITH_IMAGE_URL', // e.g. hosted screenshot/GIF
+    description:
+        'Full-stack AI career platform. Flutter + Riverpod (MVVM, Clean '
+        'Architecture) mobile app with a Django REST backend. Features an '
+        'AI-powered resume builder with real-time preview, on-device PDF '
+        'generation, and ATS score analysis with actionable feedback.',
+    tag: ProjectTag.production,
+    skills: [
+      Skills.flutter,
+      Skills.django,
+      Skills.riverpod,
+      Skills.postgresql,
+    ],
+    links: [
+      (
+        url: 'https://github.com/provikash/prepMateAi',
+        urlText: 'Code',
+        icon: FontAwesomeIcons.code,
+      ),
+    ],
+    endDate: DateTime(2026, 3),
+  );
+
+  static final vibely = Project(
+    name: 'Vibely',
+    imageUrl: 'TODO_REPLACE_WITH_IMAGE_URL',
+    description:
+        'Real-time one-to-one chat app with sub-second message delivery via '
+        'Cloud Firestore streams. Dual auth flows (Email/Password + Google '
+        'OAuth), FCM push notifications for background/closed-app delivery, '
+        'and Riverpod-managed async state across chat, auth, and '
+        'notifications.',
+    tag: ProjectTag.production,
+    skills: [
+      Skills.flutter,
+      Skills.firebase,
+      Skills.riverpod,
+    ],
+    links: [
+      (
+        url: 'TODO_REPLACE_WITH_REPO_URL', // e.g. github.com/provikash/vibely
+        urlText: 'Code',
+        icon: FontAwesomeIcons.code,
+      ),
+    ],
+    endDate: DateTime(2025, 3),
+  );
+
+  static final botHost = Project(
+    name: 'BotHost',
+    imageUrl: 'TODO_REPLACE_WITH_IMAGE_URL',
+    description:
+        'Cloud hosting platform for Telegram bot developers. Flutter '
+        'frontend with a FastAPI backend, Docker-per-bot isolation for '
+        'security and resource separation, tiered pricing with bandwidth '
+        'metering, and a web-based external checkout flow to stay compliant '
+        'with Play Store policies.',
+    tag: ProjectTag.production,
+    skills: [
+      Skills.flutter,
+      Skills.docker,
+      Skills.python,
+    ],
+    links: [
+      (
+        url: 'TODO_REPLACE_WITH_REPO_URL',
+        urlText: 'Code',
+        icon: FontAwesomeIcons.code,
+      ),
+    ],
+    endDate: null, // still active/in progress
+  );
+
+  static final storageBuilder = Project(
+    name: 'Storage-builder',
+    imageUrl: 'TODO_REPLACE_WITH_IMAGE_URL',
+    description:
+        'Telegram bot hosting project — the earlier iteration that fed into '
+        'BotHost, exploring bot provisioning and storage management via the '
+        'Telegram Bot API.',
+    tag: ProjectTag.project,
+    skills: [
+      Skills.python,
+    ],
+    links: [
+      (
+        url: 'https://github.com/provikash/Storage-builder',
+        urlText: 'Code',
+        icon: FontAwesomeIcons.code,
+      ),
+    ],
+    endDate: DateTime(2025, 6),
+  );
+
+  static final catalog = Project(
+    name: 'Catalog',
+    imageUrl: 'TODO_REPLACE_WITH_IMAGE_URL',
+    description:
+        'Product explorer app built against the DummyJSON API. MVC + '
+        'Riverpod, offline caching, and wishlist persistence — completed as '
+        'a full internship assignment with a full debugging cycle.',
+    tag: ProjectTag.project,
+    skills: [
+      Skills.flutter,
+      Skills.riverpod,
+    ],
+    links: [
+      (
+        url: 'TODO_REPLACE_WITH_REPO_URL',
+        urlText: 'Code',
+        icon: FontAwesomeIcons.code,
+      ),
+    ],
+    endDate: DateTime(2025, 1),
+  );
+
+  // static final lingoBreeze = Project(
+  //   name: 'LingoBreeze',
+  //   imageUrl: 'TODO_REPLACE_WITH_IMAGE_URL',
+  //   description:
+  //       'Full-stack language-learning app built as a technical assignment. '
+  //       'Flutter client with Clean Architecture, Node.js/Firebase backend.',
+  //   tag: ProjectTag.project,
+  //   skills: [
+  //     Skills.flutter,
+  //     Skills.nodeJs,
+  //     Skills.firebase,
+  //   ],
+  //   links: [
+  //     (
+  //       url: 'TODO_REPLACE_WITH_REPO_URL',
+  //       urlText: 'Code',
+  //       icon: FontAwesomeIcons.code,
+  //     ),
+  //   ],
+  //   endDate: DateTime(2024, 10),
+  // );
+
+  /// All projects (unsorted)
+  static final List<Project> _all = [
+    prepMateAi,
+    vibely,
+    botHost,
+    catalog,
+    storageBuilder,
+  ];
+
+  static List<Project> get all => sorted(_all);
+
+  /// Sorts projects:
+  /// - null endDate (in-progress) first
+  /// - otherwise by endDate, newest first
+  static List<Project> sorted(List<Project> projects) {
+    final list = List<Project>.from(projects);
+    list.sort((a, b) {
+      if (a.endDate == null && b.endDate == null) return 0;
+      if (a.endDate == null) return -1;
+      if (b.endDate == null) return 1;
+      return b.endDate!.compareTo(a.endDate!);
+    });
+    return list;
+  }
+
+  static List<Project> byTag(ProjectTag tag) {
+    if (tag == ProjectTag.all) return all;
+
+    final list = _all.where((p) => p.tag == tag).toList();
+    return sorted(list);
+  }
+
+  static final List<Project> highlights = [
+    prepMateAi,
+    vibely,
+    botHost,
+  ];
+}
