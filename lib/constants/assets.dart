@@ -1,7 +1,8 @@
 part of 'constants.dart';
 
 class ImageAssets {
-  static const String avatarImage = 'assets/images/avatar.svg';
+  static const String avatarAnimation =
+      'https://assets10.lottiefiles.com/packages/lf20_touohxv0.json';
 
   static const String darkGIFImage = 'assets/images/coding_dark.gif';
 

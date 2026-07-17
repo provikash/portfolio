@@ -42,7 +42,11 @@ class _NavbarState extends State<Navbar> {
                     shape: BoxShape.circle,
                     color: KnownColors.transparent,
                   ),
-                  child: SvgPicture.asset(ImageAssets.avatarImage),
+                  child: Lottie.network(
+                    ImageAssets.avatarAnimation,
+                    fit: BoxFit.cover,
+                    repeat: true,
+                  ),
                 ),
               ),
             ),

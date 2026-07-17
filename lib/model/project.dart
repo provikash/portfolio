@@ -30,7 +30,6 @@ enum ProjectTag {
 class Project {
   final String name;
   final String imageUrl;
-  final ProjectTag tag;
   final String description;
   final List<Skill> skills;
   final List<Link> links;
@@ -41,7 +40,6 @@ class Project {
     required this.name,
     required this.imageUrl,
     required this.description,
-    required this.tag,
     required this.skills,
     required this.links,
     this.endDate,
