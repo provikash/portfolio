@@ -73,7 +73,7 @@ class GlobalFooter extends StatelessWidget {
                         ),
                         WidgetSpan(
                           alignment: PlaceholderAlignment.middle,
-                          child: SvgPicture.asset(
+                          child: SafeSvg(
                             LogoAssets.flutterLogo,
                             height: Sizes.iconSmall,
                             fit: BoxFit.fitHeight,
@@ -93,7 +93,7 @@ class GlobalFooter extends StatelessWidget {
                         ),
                         WidgetSpan(
                           alignment: PlaceholderAlignment.middle,
-                          child: SvgPicture.asset(
+                          child: SafeSvg(
                             LogoAssets.vercelLogo,
                             height: Sizes.iconSmall,
                             fit: BoxFit.fitHeight,
