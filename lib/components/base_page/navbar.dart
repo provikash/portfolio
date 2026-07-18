@@ -42,22 +42,7 @@ class _NavbarState extends State<Navbar> {
                     shape: BoxShape.circle,
                     color: KnownColors.transparent,
                   ),
-                      child: SvgPicture.asset(
-                        ImageAssets.avatarImage,
-                        fit: BoxFit.cover,
-                        placeholderBuilder: (context) => Container(
-                          alignment: Alignment.center,
-                          color: Colors.transparent,
-                          child: Icon(
-                            Icons.person,
-                            size: Sizes.iconLarge,
-                            color: context.colors.textColor.withValues(alpha: 0.6),
-                          ),
-                        ),
-                        // Note: `flutter_svg` version used in this project does not support
-                        // an `onPictureError` parameter on `SvgPicture.asset`. Errors
-                        // will show the placeholderBuilder instead.
-                      ),
+                  child: SvgPicture.asset(ImageAssets.avatarImage),
                 ),
               ),
             ),

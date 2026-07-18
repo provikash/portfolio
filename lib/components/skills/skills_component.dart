@@ -13,7 +13,6 @@ import 'package:portfolio/widgets/sequential_animator.dart';
 import 'package:portfolio/widgets/text/gradient_text.dart';
 import 'package:portfolio/widgets/text/subtext.dart';
 import 'package:portfolio/widgets/window_container.dart';
-import 'package:portfolio/widgets/safe_svg.dart';
 
 part 'skill_chip.dart';
 part 'skill_item.dart';

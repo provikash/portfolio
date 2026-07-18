@@ -20,7 +20,6 @@ import 'package:portfolio/widgets/arrow_controller.dart';
 import 'package:portfolio/widgets/auto_scroll.dart';
 import 'package:portfolio/widgets/sliding_carousel.dart';
 import 'package:portfolio/widgets/text/gradient_text.dart';
-import 'package:portfolio/widgets/safe_svg.dart';
 
 part 'intro/display_image.dart';
 part 'intro/skill_carousel.dart';

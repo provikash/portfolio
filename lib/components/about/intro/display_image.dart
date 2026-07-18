@@ -28,7 +28,7 @@ class DisplayImage extends StatelessWidget {
             colorBlendMode: BlendMode.srcIn,
           ),
         ),
-        SafeSvg(
+        SvgPicture.asset(
           ImageAssets.displayImageAnnotation,
           fit: BoxFit.fill,
           height: size,

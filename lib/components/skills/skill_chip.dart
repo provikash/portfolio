@@ -38,7 +38,7 @@ class SkillChip extends StatelessWidget {
         spacing: compact ? Sizes.spacingXS : Sizes.spacingSmall,
         children: [
           if (skill.icon != null)
-            SafeSvg(
+            SvgPicture.asset(
               skill.icon!,
               height: compact ? Sizes.iconXS : Sizes.iconSmall,
               width: compact ? Sizes.iconXS : Sizes.iconSmall,

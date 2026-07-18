@@ -96,7 +96,7 @@ class CarouselItem extends StatelessWidget {
         spacing: Sizes.spacingSmallRegular,
         children: [
           if (skill.icon != null)
-            SafeSvg(
+            SvgPicture.asset(
               skill.icon!,
               height: Sizes.iconRegular,
               width: Sizes.iconRegular,
