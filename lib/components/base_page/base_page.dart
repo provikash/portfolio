@@ -14,6 +14,7 @@ import 'package:portfolio/utilities/extensions.dart';
 import 'package:portfolio/utilities/utils.dart';
 import 'package:portfolio/widgets/grid_background.dart';
 import 'package:portfolio/widgets/text/hover_glow_text.dart';
+import 'package:portfolio/widgets/logo_asset.dart';
 import 'package:portfolio/widgets/safe_svg.dart';
 
 part 'global_footer.dart';
