@@ -5,7 +5,7 @@ class Links {
   Links._();
 
   static const Link linkedin = (
-    url: 'https://linkedin.com/in/fullstackdev',
+    url: 'https://www.linkedin.com/in/vikashchaurasiyafullstack/',
     urlText: 'LinkedIn',
     icon: FontAwesomeIcons.squareLinkedin,
   );
