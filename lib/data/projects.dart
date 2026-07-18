@@ -1,5 +1,5 @@
 
-import 'package:flutter/painting.dart';
+
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/data/skills.dart';
 import 'package:portfolio/model/project.dart';

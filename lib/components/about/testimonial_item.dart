@@ -73,78 +73,78 @@ class _TestimonialItemState extends State<TestimonialItem> {
   }
 }
 
-class _TestimonialCard extends StatelessWidget {
-  const _TestimonialCard({required this.testimonial});
+// class _TestimonialCard extends StatelessWidget {
+//   const _TestimonialCard({required this.testimonial});
 
-  final Testimonial testimonial;
+//   final Testimonial testimonial;
 
-  @override
-  Widget build(BuildContext context) {
-    final colors = context.colors;
+//   @override
+//   Widget build(BuildContext context) {
+//     final colors = context.colors;
 
-    return Container(
-      padding: Sizes.paddingLarge,
-      decoration: BoxDecoration(
-        color: colors.surfaceColor,
-        borderRadius: Sizes.borderRadiusRegular,
-        border: Border.all(color: colors.borderColor),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        spacing: Sizes.spacingRegular,
-        children: [
-          FaIcon(
-            FontAwesomeIcons.quoteLeft,
-            size: Sizes.iconLarge,
-            color: KnownColors.purple500,
-          ),
-          Gap(Sizes.spacingSmall),
-          Expanded(
-            child: AutoSizeText(
-              testimonial.message,
-              style: Styles.regularText(),
-              minFontSize: 10,
-              maxFontSize: 14,
-              stepGranularity: 0.1,
-            ),
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              CircleAvatar(
-                radius: Sizes.iconRegular,
-                backgroundColor: colors.primaryColor.withValues(alpha: 0.1),
-                child: Text(
-                  testimonial.name[0],
-                  style: Styles.regularTextBold(textColor: colors.primaryColor),
-                ),
-              ),
-              Gap(Sizes.spacingRegular),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      testimonial.name,
-                      style: Styles.smallTextBold(),
-                    ),
-                    Text(
-                      testimonial.designation,
-                      style: Styles.extraSmallText(
-                        textColor: colors.textSecondary,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-}
+//     return Container(
+//       padding: Sizes.paddingLarge,
+//       decoration: BoxDecoration(
+//         color: colors.surfaceColor,
+//         borderRadius: Sizes.borderRadiusRegular,
+//         border: Border.all(color: colors.borderColor),
+//       ),
+//       child: Column(
+//         mainAxisAlignment: MainAxisAlignment.start,
+//         crossAxisAlignment: CrossAxisAlignment.start,
+//         mainAxisSize: MainAxisSize.min,
+//         spacing: Sizes.spacingRegular,
+//         children: [
+//           FaIcon(
+//             FontAwesomeIcons.quoteLeft,
+//             size: Sizes.iconLarge,
+//             color: KnownColors.purple500,
+//           ),
+//           Gap(Sizes.spacingSmall),
+//           Expanded(
+//             child: AutoSizeText(
+//               testimonial.message,
+//               style: Styles.regularText(),
+//               minFontSize: 10,
+//               maxFontSize: 14,
+//               stepGranularity: 0.1,
+//             ),
+//           ),
+//           Row(
+//             mainAxisAlignment: MainAxisAlignment.start,
+//             crossAxisAlignment: CrossAxisAlignment.start,
+//             children: [
+//               CircleAvatar(
+//                 radius: Sizes.iconRegular,
+//                 backgroundColor: colors.primaryColor.withValues(alpha: 0.1),
+//                 child: Text(
+//                   testimonial.name[0],
+//                   style: Styles.regularTextBold(textColor: colors.primaryColor),
+//                 ),
+//               ),
+//               Gap(Sizes.spacingRegular),
+//               Expanded(
+//                 child: Column(
+//                   crossAxisAlignment: CrossAxisAlignment.start,
+//                   mainAxisSize: MainAxisSize.min,
+//                   children: [
+//                     Text(
+//                       testimonial.name,
+//                       style: Styles.smallTextBold(),
+//                     ),
+//                     Text(
+//                       testimonial.designation,
+//                       style: Styles.extraSmallText(
+//                         textColor: colors.textSecondary,
+//                       ),
+//                     ),
+//                   ],
+//                 ),
+//               ),
+//             ],
+//           ),
+//         ],
+//       ),
+//     );
+//   }
+// }

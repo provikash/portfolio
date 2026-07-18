@@ -48,7 +48,7 @@ class Skills {
 
   static const materialDesign = Skill(
     name: 'Material Design',
-    category: SkillCategory.frontend, // TODO: add a logo asset if desired
+    category: SkillCategory.frontend, 
   );
 
   // ---------------- State Management & Architecture ----------------
@@ -58,7 +58,7 @@ class Skills {
 
   static const riverpod = Skill(
     name: 'Riverpod',
-    category: SkillCategory.frontend, // TODO: LogoAssets.riverpodLogo if you have one
+    category: SkillCategory.frontend, 
   );
 
   static const provider = Skill(
@@ -80,7 +80,8 @@ class Skills {
 
   static const django = Skill(
     name: 'Django',
-    category: SkillCategory.backend, // TODO: LogoAssets.djangoLogo
+    category: SkillCategory.backend, 
+    
   );
 
   static const restApis = Skill(
@@ -90,12 +91,12 @@ class Skills {
 
   static const celery = Skill(
     name: 'Celery',
-    category: SkillCategory.backend, // TODO: LogoAssets.celeryLogo
+    category: SkillCategory.backend, 
   );
 
   static const redis = Skill(
     name: 'Redis',
-    category: SkillCategory.backend, // TODO: LogoAssets.redisLogo
+    category: SkillCategory.backend, 
   );
 
   static const jwtAuth = Skill(
@@ -131,7 +132,8 @@ class Skills {
 
   static const sqlite = Skill(
     name: 'SQLite',
-    category: SkillCategory.database, // TODO: LogoAssets.sqliteLogo
+    category: SkillCategory.database,
+     
   );
 
   // ---------------- DevOps & Tools ----------------
@@ -157,17 +159,17 @@ class Skills {
 
   static const androidStudio = Skill(
     name: 'Android Studio',
-    category: SkillCategory.cloudTools, // TODO: LogoAssets.androidStudioLogo
+    category: SkillCategory.cloudTools,
   );
 
   static const vsCode = Skill(
     name: 'VS Code',
-    category: SkillCategory.cloudTools, // TODO: LogoAssets.vsCodeLogo
+    category: SkillCategory.cloudTools, 
   );
 
   static const postman = Skill(
     name: 'Postman',
-    category: SkillCategory.cloudTools, // TODO: LogoAssets.postmanLogo
+    category: SkillCategory.cloudTools, 
   );
 
   static List<Skill> get coreStack => [
